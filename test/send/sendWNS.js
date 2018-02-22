@@ -65,6 +65,7 @@ const wnsMethods = [
     'sendTileWidePeekImage04',
     'sendTileWidePeekImage05',
     'sendTileWidePeekImage06',
+    'sendRaw'
 ];
 const pn = new PN({
     wns: {

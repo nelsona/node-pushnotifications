@@ -43,7 +43,7 @@ module.exports = (_regIds, _data, settings) => {
     const promises = [];
     const notificationMethod = settings.wns.notificationMethod;
     const opts = Object.assign({}, settings.wns);
-    const data = Object.assign({}, _data);
+    const data = notificationMethod.toLowerCase() === 'sendraw' ? _data : Object.assign({}, _data);
 
     resumed = {
         method,
